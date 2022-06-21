@@ -250,8 +250,34 @@ nav {
     -justify-items: center;
     -align-items: center;
     justify-content: center;
+    -position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s;
 }
+
+
     
+.tarjeta1:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta2:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta3:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta4:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px rgba(0, 0, 0, 0.2);
+}
+
 .tarjeta1 {
     grid-area: tarjeta1; 
     background-color: #C5D8DE;
@@ -295,6 +321,7 @@ nav {
 .tarjeta4 img {
     width: 200px;
 }
+
 
 /*.tarjeta {
     width: 400px;

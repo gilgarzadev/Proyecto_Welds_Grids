@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3cb2bbe2dc.js" crossorigin="anonymous"></script>
     <title>Welds Distribution Center</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
@@ -27,8 +28,10 @@
     
         <header id="titulo">
             <div class="encabezado">
-            
+
+                <div data-aos="fade-right">
                 <img src="./Imagenes/WELDS.png">
+                </div>
                 <h1>Welds Distribution Center</h1>
                 <nav>
                     <!--<a href="#" class="Logo nav-link" >Logo</a>-->
@@ -70,28 +73,28 @@
                     <article id="Productos">
                         <h3>Productos</h3>
                                 <div class="Tarjetas">
-                                    <div class="tarjeta1">
+                                    <div data-aos="fade-down-right" class="tarjeta1">
                                         <h4>Servicio</h4>
                                         <img src="./Imagenes/oxicorte.jpg " alt="">
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
                                         <button class="btn">Comprar</button>
                                     </div>
 
-                                    <div class="tarjeta2">
+                                    <div  data-aos="flip-left" class="tarjeta2">
                                         <h4>Cortes</h4>
                                         <img src="./Imagenes/oxicorte.jpg" alt="">
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
                                         <button class="btn">Comprar</button>
                                     </div>
 
-                                    <div class="tarjeta3">
+                                    <div data-aos="flip-up" class="tarjeta3">
                                         <h4>Cortes</h4>
                                         <img src="./Imagenes/oxicorte.jpg" alt="">
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
                                         <button class="btn">Comprar</button>
                                     </div>
 
-                                    <div class="tarjeta4">
+                                    <div data-aos="zoom-in"class="tarjeta4">
                                         <h4>Cortes</h4>
                                         <img src="./Imagenes/oxicorte.jpg" alt="">
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quidem. Unde expedita facere quisquam voluptates.</p>
@@ -234,5 +237,9 @@
 
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
