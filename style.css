@@ -1,0 +1,871 @@
+* {
+    -margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #efefef;
+    
+}
+
+
+.portada {
+    background-image: url("Imagenes/portada.jpg");
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url('./Imagenes/portada.jpg');
+    animation: banner 20s infinite linear;
+}
+
+.banner-conte {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-conte h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner-conte a {
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.banner-conte a:hover {
+    background-color: #FFF;
+    color: #333;
+}
+
+.nosotros {
+    display: flex;
+    padding: 80px 0;
+    
+}
+
+.nosotros_texto h2{
+    color: #206C7F;
+    width: 550px;
+}
+
+.nosotros_texto p {
+     font-size: 16px;
+}
+
+.nosotros_foto {
+    display: inline;
+    margin: auto 10px;
+}
+
+.empresas {
+    display: flex;
+    padding: 80px 0;
+}
+
+.empresas h2 {
+    color: #206C7F;
+}
+
+.empresas_texto p {
+    font-size: 16px;
+}
+
+.encabezado {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@keyframes banner{
+    0% {
+        background-image: url('./Imagenes/portada.jpg');
+    }
+    25% {
+        background-image: url('./Imagenes/portada.jpg');
+    }
+    26% {
+        background-image: url('./Imagenes/cortelaser.jpeg');
+    }
+    50% {
+        background-image: url('./Imagenes/cortelaser.jpeg');
+    }
+    51% {
+        background-image: url('./Imagenes/soldaduraestructural.jpg');
+    }
+    75% {
+        background-image: url('./Imagenes/soldaduraestructural.jpg');
+    }
+    76% {
+        background-image: url('./Imagenes/oxicorte.jpg');
+    }
+    100% {
+        background-image: url('./Imagenes/oxicorte.jpg');
+    }
+
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;   
+}
+
+
+header {
+    background-color: #206C7F;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+header img {
+    width: 50px;
+    padding-right: 10px;
+
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-right: auto;
+}
+
+h3 {
+    color: #206C7F;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 30px;
+    line-height: 30px;
+    cursor: pointer;
+    display: none; 
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+    
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+.nav-menu-item {
+    font-size: 15px;
+    margin: 0 5px  ;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.nav-menu-link {
+    padding: 4px 4px;
+    border-radius: 2px;
+    transition: all 0.4s linear;
+
+}
+
+.nav-menu-link:hover {
+    background-color: #034574;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.container {
+    margin: 10px;
+}
+
+
+
+.centrado {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}   
+
+
+.Tarjetas {
+    display: grid;
+    -height: 800px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tarjeta1 tarjeta1 tarjeta2 tarjeta2"
+                         "tarjeta1 tarjeta1 tarjeta2 tarjeta2"
+                         "tarjeta1 tarjeta1 tarjeta3 tarjeta4"
+                         "tarjeta1 tarjeta1 tarjeta3 tarjeta4";
+                        
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+    -justify-items: center;
+    -align-items: center;
+    justify-content: center;
+}
+    
+.tarjeta1 {
+    grid-area: tarjeta1; 
+    background-color: #C5D8DE;
+    justify-self: unset; 
+    text-align: center;
+    -width: fit-content;
+    -height: fit-content;
+}
+.tarjeta1 img {
+    width: 550px;
+}
+
+
+.tarjeta2 { 
+    grid-area: tarjeta2;
+    background-color: #C5D8DE;
+    justify-self: unset;
+    text-align: center;
+ }
+
+.tarjeta2 img {
+    width: 200px;
+}
+
+.tarjeta3 {
+     grid-area: tarjeta3; 
+     background-color: #C5D8DE;
+     justify-self: unset;
+     text-align: center;
+}
+
+.tarjeta3 img {
+    width: 200px;
+}
+.tarjeta4 { 
+    grid-area: tarjeta4;
+    background-color: #C5D8DE;
+    justify-self: unset;
+    text-align: center;
+} 
+.tarjeta4 img {
+    width: 200px;
+}
+
+/*.tarjeta {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background: #C5D8DE;
+    border-radius: 10px;  
+}
+
+
+.Tarjetas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    color: white;
+}*/
+
+/*Tarjetas Viejas*/
+/*.servicio {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #C5D8DE;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    
+}
+
+.cortes {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #C5D8DE;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.soldaduras {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #C5D8DE;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+     
+}*/
+
+
+
+
+.piepagina {
+    background-color: #72A2AE;
+    padding: 1rem;
+    --width: 100%;
+    
+}
+
+.conteiner_footer {
+    display: flex;
+    
+    -flex-wrap: wrap;
+    justify-content: space-between;
+    --max-width: 1200px;
+    margin: auto;
+}
+
+
+.formu {
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+
+.formu button {
+    cursor: pointer;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.4s ease;
+    float: right;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #206C7F;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    --background: #fff;
+    --padding: 40px 0;
+    --box-shadow: 0 0 6px 0 rgb(255, 255, 255, 0.8);
+    --border-radius: 10px;
+}
+
+form h5 {
+    text-align: center;
+    margin: auto;
+}
+
+.form {
+    margin: 5px;
+
+}
+
+form .grupo {
+    position: relative;
+    margin: 15px ;
+}
+
+input {
+    background: none;
+    --background: #fff;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+textarea {
+    background: none;
+    --background: #fff;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    color: #5e5d5d;
+}
+
+textarea:focus {
+    outline: none;
+    color: #5e5d5d;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+textarea:focus~label,
+textarea:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    
+}
+    
+
+button {
+    border-radius: 5px;
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+    color: #000;
+    background-color: #034574;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.dir {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 60px 100px;
+}
+
+.dir p {
+    padding: 10px 10px;
+}
+
+
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --youtube:  #c4302b;
+    --whatsaap: #128c7e;
+    --colorTextos: #000;
+}
+
+.socialmedia {
+    --display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 100px; 
+}
+
+.socialmedia h5 {
+    padding: 40px 100px;
+}
+
+
+.socialmedia ul {
+    list-style: none;
+    color: #206C7F;
+    
+}
+
+.socialmedia ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.socialmedia ul li a {
+    display: block;
+    padding:  0 10px;
+    background-color: #034574;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.socialmedia ul:hover a {
+    filter: blur(2px);
+}
+
+.socialmedia ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+}
+
+.socialmedia ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.socialmedia ul li .instagram:hover {
+    background: var(--instagram);
+}
+
+.socialmedia ul li .youtube:hover {
+    background: var(--youtube);
+}
+
+.socialmedia ul li .twitter:hover {
+    background: var(--twitter);
+}
+
+.socialmedia ul li .whatsaap:hover {
+    background: var(--whatsaap);
+}
+
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    font-size: 15px;
+    
+   
+}
+
+.copyright p {
+    margin-top: 20px;
+    display: inline-block;
+    
+    
+}
+
+.copyright hr {
+    margin-top: 20px;
+}
+
+.copyright:hover {
+    cursor: pointer;
+}
+
+
+.tienda { 
+    background-color: #01BCFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tienda img {
+    width: 800px;
+}
+
+.tex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 300px;
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+    header {
+        background-color: #206C7F;
+        width: 100%;  
+        padding: 5px;
+    }
+
+
+    .encabezado h1{
+        font-size: 15px;
+    }
+ 
+    .nav-menu {
+        flex-direction: column; 
+        align-items: center;
+        list-style: none;
+        margin: 0; 
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
+        transition: left 0.3s;
+
+
+    } 
+
+    .nav-menu-item{
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover{
+        background: none;
+        color: white;
+    } 
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+             
+    }
+    
+    .nosotros {
+        display: flex;
+        margin-top: -50px;
+        -text-align: center;
+
+    }
+    .nosotros_foto {
+        width: 432px;
+    }
+
+    .nosotros_foto img{
+        width: 400px;
+        text-align: center;
+    }
+
+    .empresas {
+        display: flex;
+        flex-direction: column;
+        margin-top: -80px;
+        -text-align: center;
+    }
+    
+    .empresas_logos_foto {
+        text-align: center;
+    }
+
+  
+    
+    .Tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta1 img {
+        width: 200px
+    }
+    
+    .tex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 100px;
+        font-size: 25px;
+    }
+    .tienda img {
+        display: none;
+    }
+
+    .piepagina {
+        background-color: #72A2AE;
+        padding: 1rem;
+        
+        
+    }
+    .conteiner_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    .socialmedia {
+        display: none;
+         
+    }
+
+    
+}
+
+
+@media screen and (max-width: 780px) {
+    
+    header {
+        background-color: #206C7F;
+        width: 100%;  
+        padding: 5px;
+    }
+
+
+    .encabezado h1{
+        font-size: 15px;
+    }
+ 
+    .nav-menu {
+        flex-direction: column; 
+        align-items: center;
+        list-style: none;
+        margin: 0; 
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
+        transition: left 0.3s;
+
+
+    } 
+
+    .nav-menu-item{
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover{
+        background: none;
+        color: white;
+    } 
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+             
+    }
+
+    .Tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta1 img {
+        width: 200px
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nosotros_foto{
+        display: inline;
+        
+    }
+
+ 
+    
+    .tex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 100px;
+        font-size: 25px;
+    }
+    .tienda img {
+        display: none;
+    }
+
+    .piepagina {
+        background-color: #72A2AE;
+        padding: 1rem;
+       
+    }
+
+    .dir {
+        text-align: center;
+    }
+    .conteiner_footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    
+    .socialmedia {
+        display: none;
+         
+    }
+    
+}
